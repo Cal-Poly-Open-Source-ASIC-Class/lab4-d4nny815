@@ -1,4 +1,4 @@
-module fifo #(
+module afifo #(
     parameter WIDTH = 8,
     parameter DEPTH  = 4
     ) (

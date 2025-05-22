@@ -1,0 +1,344 @@
+(
+    show_hierarchy: None,
+    show_menu: None,
+    show_ticks: None,
+    show_toolbar: None,
+    show_tooltip: None,
+    show_overview: None,
+    show_statusbar: None,
+    align_names_right: None,
+    show_variable_indices: None,
+    show_variable_direction: None,
+    show_empty_scopes: None,
+    show_parameters_in_scopes: None,
+    waves: Some((
+        source: File("dump.fst"),
+        format: Fst,
+        active_scope: Some(WaveScope((
+            strs: [
+                "afifo",
+            ],
+        ))),
+        displayed_items_order: [
+            (7),
+            (11),
+            (13),
+            (10),
+            (12),
+            (14),
+            (15),
+            (4),
+            (6),
+            (3),
+            (5),
+            (8),
+            (9),
+            (1),
+            (2),
+        ],
+        displayed_items: {
+            (14): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "wptr",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "wptr [4:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (7): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "reset_n",
+                ),
+                color: Some("Violet"),
+                background_color: None,
+                display_name: "reset_n",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (10): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "waddr",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "waddr [3:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (12): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "wdata",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "wdata [7:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (2): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "full",
+                ),
+                color: Some("Pink"),
+                background_color: None,
+                display_name: "full",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (15): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "wq2_rptr",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "wq2_rptr [4:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (13): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "we",
+                ),
+                color: Some("Orange"),
+                background_color: None,
+                display_name: "we",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (3): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "raddr",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "raddr [3:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (8): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "rptr",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "rptr [4:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (1): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "empty",
+                ),
+                color: Some("Pink"),
+                background_color: None,
+                display_name: "empty",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (4): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "rclk",
+                ),
+                color: Some("Violet"),
+                background_color: None,
+                display_name: "rclk",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (6): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "re",
+                ),
+                color: Some("Orange"),
+                background_color: None,
+                display_name: "re",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (5): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "rdata",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "rdata [7:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (9): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "rq2_wptr",
+                ),
+                color: None,
+                background_color: None,
+                display_name: "rq2_wptr [4:0]",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+            (11): Variable((
+                variable_ref: (
+                    path: (
+                        strs: [
+                            "afifo",
+                        ],
+                    ),
+                    name: "wclk",
+                ),
+                color: Some("Violet"),
+                background_color: None,
+                display_name: "wclk",
+                display_name_type: Unique,
+                manual_name: None,
+                format: None,
+                field_formats: [],
+            )),
+        },
+        display_item_ref_counter: 15,
+        viewports: [
+            (
+                curr_left: (0.0),
+                curr_right: (1.0),
+                target_left: (0.0),
+                target_right: (1.0),
+                move_start_left: (0.0),
+                move_start_right: (1.0),
+                move_duration: None,
+                move_strategy: Instant,
+            ),
+        ],
+        cursor: Some((0, [])),
+        markers: {},
+        focused_item: Some((2)),
+        focused_transaction: (None, None),
+        selected_items: [
+            (6),
+        ],
+        default_variable_name_type: Unique,
+        scroll_offset: 0.0,
+        display_variable_indices: true,
+        graphics: {},
+    )),
+    drag_started: false,
+    drag_source_idx: None,
+    drag_target_idx: Some((8)),
+    previous_waves: None,
+    count: None,
+    blacklisted_translators: [],
+    show_about: false,
+    show_keys: false,
+    show_gestures: false,
+    show_quick_start: false,
+    show_license: false,
+    show_performance: false,
+    show_logs: false,
+    show_cursor_window: false,
+    wanted_timeunit: PicoSeconds,
+    time_string_format: None,
+    show_url_entry: false,
+    variable_name_filter_focused: false,
+    variable_name_filter_type: Fuzzy,
+    variable_name_filter_case_insensitive: true,
+    rename_target: None,
+    sidepanel_width: Some(216.6352),
+    ui_zoom_factor: Some(1.5),
+)
