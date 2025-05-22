@@ -11,7 +11,7 @@ module wptr_mod #(
     );
 
     logic [DEPTH:0] wbin;
-    logic [DEPTH:0] wgray_next, wbin_next;
+    logic [DEPTH:0] wgrey_next, wbin_next;
     logic wfull_val;
     
     always @(posedge wclk or negedge wrst_n) begin
@@ -22,7 +22,7 @@ module wptr_mod #(
         end
         else begin
             wbin <= wbin_next;
-            wptr <= wgray_next;
+            wptr <= wgrey_next;
             wfull <= wfull_val;
         end
     end
@@ -30,10 +30,10 @@ module wptr_mod #(
     always_comb begin
         waddr = wbin[DEPTH-1:0];
         wbin_next = !wfull ? wbin + {{DEPTH-1{1'b0}}, winc} : wbin;
-        wgray_next = wbin_next ^ (wbin_next >> 1);
+        wgrey_next = wbin_next ^ (wbin_next >> 1);
 
-        wfull_val = ((wgray_next[DEPTH] != wq2_rptr[DEPTH] ) &&
-                     (wgray_next[DEPTH-1] != wq2_rptr[DEPTH-1]) &&
-                     (wgray_next[DEPTH-2:0] == wq2_rptr[DEPTH-2:0]));
+        wfull_val = ((wgrey_next[DEPTH] != wq2_rptr[DEPTH] ) &&
+                     (wgrey_next[DEPTH-1] != wq2_rptr[DEPTH-1]) &&
+                     (wgrey_next[DEPTH-2:0] == wq2_rptr[DEPTH-2:0]));
     end
 endmodule

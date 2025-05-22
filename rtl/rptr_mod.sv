@@ -11,7 +11,7 @@ module rptr_mod #(
     );
 
     logic [DEPTH:0] rbin;
-    logic [DEPTH:0] rgray_next, rbin_next;
+    logic [DEPTH:0] rgrey_next, rbin_next;
     logic rempty_val;
 
     always @(posedge rclk or negedge rrst_n) begin
@@ -22,7 +22,7 @@ module rptr_mod #(
         end
         else begin
             rbin <= rbin_next;
-            rptr <= rgray_next;
+            rptr <= rgrey_next;
             rempty <= rempty_val;
         end
     end
@@ -30,9 +30,9 @@ module rptr_mod #(
     always_comb begin
         raddr = rbin[DEPTH-1:0];
         rbin_next = !rempty ? rbin + {{DEPTH-1{1'b0}}, rinc} : rbin;
-        rgray_next = (rbin_next >> 1) ^ rbin_next;
+        rgrey_next = (rbin_next >> 1) ^ rbin_next;
         
-        rempty_val = (rgray_next == rq2_wptr);
+        rempty_val = (rgrey_next == rq2_wptr);
     end
 
 endmodule
